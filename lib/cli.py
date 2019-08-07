@@ -56,10 +56,10 @@ class ScriptExecutor():
             raise FaceswapError("The minimum supported Tensorflow is version {} but you have "
                                 "version {} installed. Please upgrade Tensorflow.".format(
                                     min_ver, tf_ver))
-        if tf_ver > max_ver:
-            raise FaceswapError("The maximumum supported Tensorflow is version {} but you have "
-                                "version {} installed. Please downgrade Tensorflow.".format(
-                                    max_ver, tf_ver))
+        # if tf_ver > max_ver:
+        #     raise FaceswapError("The maximumum supported Tensorflow is version {} but you have "
+        #                         "version {} installed. Please downgrade Tensorflow.".format(
+        #                             max_ver, tf_ver))
         logger.debug("Installed Tensorflow Version: %s", tf_ver)
 
     def test_for_gui(self):
